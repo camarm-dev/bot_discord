@@ -14,3 +14,4 @@ def send(message="", user=""):
             'Request to discord returned an error %s, the response is:\n%s'
             % (response.status_code, response.text)
     )
+

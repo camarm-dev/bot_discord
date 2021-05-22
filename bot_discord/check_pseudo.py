@@ -14,5 +14,4 @@ async def on_message(message):
             await message.delete()
 
 
-#bot.run("NzcwNTk5MTIxMTUyOTAxMTYw.X5f6Ww.-MiZk-sJm6XMuUpF2z8EB0wagss")
 bot.run("ODIyMTU2NzI3NDQ0NzAxMTg0.YFOLHg.VKK2MQsIo45SfxeO221nyZ8aws4")

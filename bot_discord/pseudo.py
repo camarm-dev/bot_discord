@@ -3,6 +3,7 @@ from discord.ext import commands, tasks
 
 
 class rename:
+
     def __init__(self, bot, message):
         self.bot = bot
         self.message = message

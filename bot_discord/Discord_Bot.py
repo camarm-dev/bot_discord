@@ -84,19 +84,20 @@ async def nickname(ctx, *name):
     await ctx.send(embed=embed)
 
 
-# @bot.event
-# async def on_command_error(ctx, error):
-# 	if isinstance(error, commands.CommandNotFound):
-# 		await ctx.send("Command not found :(")
-#
-# 	if isinstance(error, commands.MissingRequiredArgument):
-# 		await ctx.send("Il manque un argument.")
-# 	elif isinstance(error, commands.MissingPermissions):
-# 		await ctx.send("Vous n'avez pas les permissions pour faire cette commande.")
-# 	elif isinstance(error, commands.CheckFailure):
-# 		await ctx.send("Oups vous ne pouvez pas utilisez cette commande.")
-# 	if isinstance(error.original, discord.Forbidden):
-# 		await ctx.send("Le bot n'a pas les permissions nécéssaires pour faire cette commmande")
+
+@bot.event
+async def on_command_error(ctx, error):
+	if isinstance(error, commands.CommandNotFound):
+		await ctx.send("Command not found :(")
+
+	if isinstance(error, commands.MissingRequiredArgument):
+		await ctx.send("Il manque un argument.")
+	elif isinstance(error, commands.MissingPermissions):
+		await ctx.send("Vous n'avez pas les permissions pour faire cette commande.")
+	elif isinstance(error, commands.CheckFailure):
+		await ctx.send("Oups vous ne pouvez pas utilisez cette commande.")
+	if isinstance(error.original, discord.Forbidden):
+		await ctx.send("Le bot n'a pas les permissions nécéssaires pour faire cette commmande")
 
 
 @bot.command()
