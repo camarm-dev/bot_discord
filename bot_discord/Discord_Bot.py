@@ -124,7 +124,7 @@ async def info(ctx):
 async def ticket(ctx, *texte):
     if len(texte) < 1:
         return
-    if ctx.channel.id != 829360461660553216 and ctx.channel.id != 829710163619086386:
+    if ctx.channel.id != 829360461660553216 and ctx.channel.id != 829710163619086386 and ctx.channel.id != 829668214354608169:
         return
     await ctx.message.delete()
     user = ctx.message.author

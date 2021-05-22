@@ -7,7 +7,7 @@ bot = commands.Bot(command_prefix = "!!!!!!", description = "Official Community 
 @bot.event
 async def on_message(message):
     await pseudo.rename(bot, message).check_pseudo()
-    if message.channel.id == 829360461660553216:
+    if message.channel.id == 829360461660553216 or message.channel.id == 829668214354608169 or message.channel.id == 829710163619086386:
         if message.content.startswith('<ticket'):
             pass
         else:
