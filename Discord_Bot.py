@@ -339,4 +339,4 @@ async def backup(ctx):
     embed.add_field(name=f"Identifiant de backup:", value=f"`{bc_id}`", inline=False)
     await ctx.send(embed=embed)
 
-bot.run("ODIyMTU2NzI3NDQ0NzAxMTg0.YFOLHg.VKK2MQsIo45SfxeO221nyZ8aws4")
+
