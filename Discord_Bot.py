@@ -340,4 +340,3 @@ async def backup(ctx):
     await ctx.send(embed=embed)
 
 
-bot.run(ODIyMTU2NzI3NDQ0NzAxMTg0.YFOLHg.VaYI6aXH7I4cAQHQDtAW4RVYVPs)
