@@ -121,6 +121,11 @@ async def info(ctx):
 
 
 @bot.command()
+async def test(ctx):
+    ctx.send(open('test').read())
+
+
+@bot.command()
 async def ticket(ctx, *texte):
     if len(texte) < 1:
         return
