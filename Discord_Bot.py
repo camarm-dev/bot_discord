@@ -122,7 +122,7 @@ async def info(ctx):
 
 @bot.command()
 async def test(ctx):
-    ctx.send(open('test').read())
+    await ctx.send(open('test').read())
 
 
 @bot.command()
