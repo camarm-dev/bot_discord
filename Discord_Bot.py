@@ -121,6 +121,11 @@ async def info(ctx):
 
 
 @bot.command()
+async def test(ctx):
+    await ctx.send(open('test').read())
+
+
+@bot.command()
 async def ticket(ctx, *texte):
     if len(texte) < 1:
         return
@@ -339,4 +344,4 @@ async def backup(ctx):
     embed.add_field(name=f"Identifiant de backup:", value=f"`{bc_id}`", inline=False)
     await ctx.send(embed=embed)
 
-bot.run("ODIyMTU2NzI3NDQ0NzAxMTg0.YFOLHg.VKK2MQsIo45SfxeO221nyZ8aws4")
+
