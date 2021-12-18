@@ -7,9 +7,9 @@ import time
 import asyncio
 import message
 
-bot = commands.Bot(command_prefix="<", description=" Official Team pêcheur Bot")
+bot = commands.Bot(command_prefix="<", description="A Boat")
 
-status = ["tp!help",
+status = ["<help",
         "V0.0.0",
         "A votre service",
         "Team Pêcheur Bot",
